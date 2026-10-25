@@ -1,0 +1,1 @@
+(function(){"use strict";class r extends AudioWorkletProcessor{process(t){const e=t[0]?.[0];if(e&&e.length){const s=new Float32Array(e.length);s.set(e),this.port.postMessage(s,[s.buffer])}return!0}}registerProcessor("pcm-capture",r)})();
